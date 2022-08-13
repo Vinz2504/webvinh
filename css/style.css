@@ -1,1 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    weight: 360px;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 10px;
+}
+header {
+    display: flex;
+    height: 48px;
+    width: 100%;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/*header*/
+#list-item {
+    display: flex;
+    overflow-x: hidden;
+}
+/*header-text*/
+#list-item a.tatca {
+    display: block;
+    color: rgb(112, 117, 122);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 48px;
+    margin-right: 8px;
+    padding-bottom: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 0px;
+    text-align: center;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.tatca:hover {
+    border-bottom-color: rgb(66, 133, 244);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    color: rgb(66, 133, 244);
+}
+.hinhanh:hover {
+    border-bottom-color: rgb(66, 133, 244);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    color: rgb(66, 133, 244);
+}
+#list-item a.hinhanh {
+    display: block;
+    color: rgb(112, 117, 122);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 48px;
+    margin-right: 8px;
+    padding-bottom: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 0px;
+    text-align: center;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+/*header-button*/
+#button-menu {
+    width: 24px;
+    height: 27.333px;
+    padding: 12px 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#button-menu i.fa-bars {
+    color: rgb(112, 117, 122);
+    font-size: 18px;
+    padding-bottom: 4px;
+}
+/*giua*/
+#giua {
+    height: 541.667px;
+    weight: 360px;
+    padding-top: 20px;
+    text-align: center;
+}
+/*giua-logo*/
+#logo {
+    margin: 36px 100px 18px 100px;
+    text-align: center;
+    width: 160px;
+    line-height: 0;
 
+}
+.item-logo {
+    margin: 8px 0 8px 0;
+}
+/*giua-search*/
+#main-search {
+    width: 360px;
+    height: 92px;
+    display: block;
+}
+#search {
+    margin: 8px;
+    height: 40px;
+    width: 344px;
+}
+#search input {
+    max-width: 736px;
+    width: 344px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(112, 117, 122, 0.3);
+    border-radius: 50px;
+    outline: none;
+}
+#search div {
+    width: 344px;
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+#search li {
+    position: absolute;
+    color: rgba(112, 117, 122, 0.6);
+    left: 10px;
+    top: 11px;
+    font-size: 16px;
+}
+#text-search {
+    width: 360px;
+    height: 28px;
+    margin-top: 24px;
+}
+#text-search div {
+    display: inline-block;
+}
+#khung-text-search {
+    width: 360px;
+    height: 28px;
+    margin-bottom: 24px;
+}
+#khung-text {
+    color: rgb(60, 64, 67);
+    display: inline-block;
+    padding: 0 12px;
+    font-size: 13px;
+    margin-top: 4px;
+}
+#khung-text span.text1 {
+    margin: 0 2px;
+    display: inline-block;
+}
+#khung-text a.text2 {
+    padding: 0 2px;
+    padding: 0 8px;
+    color: rgb(21, 88, 214);
+}
+.text2 a {
+    padding: 0 8px;
+    color: rgb(21, 88, 214);
+}
+/*cuoi*/
+#gancuoi {
+    width: 360px;
+    height: 82.33px;
+}
+#khung-gan-cuoi {
+    text-align: center;
+    line-height: 33px;
+    background: #F2F2F2;
+}
+#quocgia {
+    line-height: 35px;
+    text-align: center;
+    margin-left: -27px;
+    font-size: 13px;
+}
+#text-gan-cuoi {
+    width: 336px;
+    height: 36.333px;
+    margin: 0 12px 0 12px;
+    text-align: left;
+    color: rgb(112, 117, 122);
+    padding-left: 27px;
+}
+.ten-quoc-gia {
+    font-size: 16px;
+}
+#duoi-quoc-gia {
+    width: 360px;
+    height: 15px;
+    padding: 15px 0;
+    border-top: 1px solid rgb(218, 220, 224);
+}
+/*menu-bar*/
+.box-check:checked + .background-menubar {
+    display: block;
+}
+.background-menubar {
+    height: 100%;
+    width: 360px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    display: none;
+}
+.box-check:checked ~ .menubar {
+    transform: translateX(0);
+    opacity: 1;
+}
+.menubar {
+    width: 250px;
+    height: 100%;
+    padding-top: 15px;
+    background: white;
+    position: fixed;
+    top: 0px;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.3s, opacity linear 0.2s;
+    z-index: 2;
+}
+.menubar::before {
+    content: "";
+    width: 250px;
+    height: 1px;
+    background: rgba(112, 117, 122, 0.5);
+    position: absolute;
+    top: 36%;
+}
+.menubar__logo {
+    width: 92px;
+    height: 36px;
+    padding-bottom: 8px;
+    margin-left: 15px;
+    font-size: 10px
+}
+.menubar__item-up {
+    font-size: 17px;
+}
+.menubar__item-up li {
+    padding: 15px 0 15px 15px;
+}
+.menubar__item-up i {
+    padding-right: 10px;
+}
+.menubar__item-up a {
+    color: rgb(112, 117, 122);
+}
+.menubar__item-down {
+    font-size: 17px;
+    margin-top: 1px;
+}
+.menubar__item-down li {
+    padding: 15px 0 15px 15px;
+}
+.menubar__item-down i {
+    padding-right: 10px;
+}
+.menubar__item-down a {
+    color: rgb(112, 117, 122);
+}
+/*more-app*/
+.item-right {
+    display: flex;
+    width: 100px;
+    height: 48px;
+    position: fixed;
+    right: 0%;
+}
+.item-right__khung-app {
+    width: 40px;
+    height: 40px;
+    color: rgb(112, 117, 122);
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-right__nen-app {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-right__app {
+    padding: 8px;
+    font-size: 20px;
+}
+/*accout*/
+.item-right__account {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-right__khung-account {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-right__nen-account {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+}
+/*menu-account*/
+.menu-account{
+  width: 320px;
+  height: 375px;
+  background: white;
+  position: fixed;
+  z-index: 4;
+  right: 3%;
+  text-align: center;
+  box-shadow: 0px 0px 5px 1px #999999;
+  top: 60px;
+   border-radius: 5px;
+   display: none;
+}
+.menu-account ::before{
+  content: "";
+  width: 320px;
+  height: 1px;
+  background: rgba(112, 117, 122, 0.1);
+  position: absolute;
+  top: 68%;
+  right: 0%;
+}
+.menu-account__logo{
+  padding: 20px 0;
+}
+.menu-account__name-acount{
+  font-weight: bold;
+  font-size: 18px;
+}
+.menu-account__gmail{
+  font-size: 15px;
+  padding-top: 2px;
+  opacity: 0.5;
+}
+.menu-account__button-account{
+  width: 250px;
+  height: 50px;
+  font-size: 16px;
+  border: 1px solid rgba(112, 117, 122, 0.5);
+  margin-left: 34px;
+  border-radius: 30px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background-menu-account{
+  height: 100%;
+  width: 360px;
+  opacity: 0.5;
+  z-index: 3;
+  position: fixed;
+  top: 0px;
+  display: none;
+}
+.box-check-account:checked ~ .menu-account {
+  display: block;
+}
+.box-check-account:checked ~ .background-menu-account {
+  display: block;
+}
